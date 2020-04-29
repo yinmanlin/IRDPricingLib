@@ -2,8 +2,8 @@
 This is a project aims to provide pricing functionalities for various fixed income products, including swaps, caps/floors, swaptions and exotic products.
 
 # How to use:
-Step 1: Yield Curve Construction.
-Construct current OIS curve and LIBOR forward curve.
+Step 1: Yield Curve Construction. <br>
+Initialize current OIS curve and LIBOR forward curve with market data.
 
 OIS is a yield curve class, it reads data from a csv file containing OIS swap market data. Initialize the class with today's date (in format of boost::gregorian::date) and the csv filename. Csv file fields are Bid, Ask, Daycount, Freq, Maturity Date.
 
