@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -54,3 +56,4 @@ public:
     std::string name() const { return "Swaption"; }
     double Price(OIS& Ois, LIBOR& Libor);
 };
+

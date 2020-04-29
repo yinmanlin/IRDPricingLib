@@ -11,7 +11,7 @@
 				"-I",
 				"/usr/local/Cellar/boost/1.72.0/include",
 				"-g",
-				"\"${workspaceFolder}\"/*.cpp",
+				"\"${workspaceFolder}\"/src/*.cpp",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}"
 			],

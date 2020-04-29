@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -52,3 +54,5 @@ public:
     //price at each caplet/floorlet and sum up
     double Price(OIS&, LIBOR&);
 };
+
+

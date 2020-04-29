@@ -1,3 +1,5 @@
+#pragma once
+
 #include <vector>
 #include <string>
 #include "IDiscount.h"
@@ -30,3 +32,4 @@ public:
     double DF(const boost::gregorian::date &T, const std::string &);
     double fwd(const boost::gregorian::date &T1, const boost::gregorian::date &T2,const std::string &);
 };
+

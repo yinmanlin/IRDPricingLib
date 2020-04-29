@@ -1,3 +1,5 @@
+#pragma once
+
 #include "MathUtil.h"
 #include "DateUtil.h"
 #include "LIBOR.h"
@@ -34,3 +36,4 @@ public:
     double OptionPrice();
     double Vega();
 };
+

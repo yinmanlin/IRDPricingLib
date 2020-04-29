@@ -1,3 +1,5 @@
+#pragma once
+
 #include <vector>
 #include <string>
 #include "OIS.h"
@@ -25,4 +27,6 @@ public:
     double DF(const boost::gregorian::date &T, const std::string &);
     double fwd(const boost::gregorian::date &T, const std::string &);
 };
+
+
     

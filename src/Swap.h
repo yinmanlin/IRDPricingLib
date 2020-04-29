@@ -1,3 +1,5 @@
+#pragma once
+
 #include "BaseContract.h"
 #include "LIBOR.h"
 
@@ -32,3 +34,4 @@ public:
     std::string name() const { return "Swap"; }
     
 };
+

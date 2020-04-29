@@ -1,3 +1,5 @@
+#pragma once
+
 #include <vector>
 #include <string>
 #include <algorithm>
@@ -9,3 +11,4 @@ double interpolation(const boost::gregorian::date &dt, std::vector<std::tuple<bo
 
 
 double interpolation(const boost::gregorian::date &dt, std::vector<std::tuple<boost::gregorian::date, double>> &curve, const std::string &method);
+
