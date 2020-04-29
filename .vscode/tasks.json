@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "C/C++: clang build active file",
+			"command": "/usr/local/Cellar/llvm/10.0.0_3/bin/clang++",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-I",
+				"/usr/local/Cellar/boost/1.72.0/include",
+				"-g",
+				"\"${workspaceFolder}\"/*.cpp",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
