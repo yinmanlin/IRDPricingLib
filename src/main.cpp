@@ -8,12 +8,13 @@
 
 int main() {
 
+
     // construct yield curve
     boost::gregorian::date today{2020,4,29};
     boost::gregorian::date d1{2023,4,29};
-    OIS ois(today, "OIS.csv");
-    LIBOR l(today, 3, "LIBOR.csv", ois);
-
+    OIS ois(today, "./data/OIS.csv");
+    LIBOR l(today, 3, "./data/LIBOR.csv", ois);
+ 
     // output ois rate
     std::cout << "OIS zero rate:\n";
     for (auto & e : ois.curve)
